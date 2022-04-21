@@ -24,7 +24,7 @@ requirements:
     - numpy
     - pandas
     - pyarrow >=3.0.0
-    - pyomniscidb >=5.5.0
+    - pyheavydb
     - python >=3.7
     - shapely
 
