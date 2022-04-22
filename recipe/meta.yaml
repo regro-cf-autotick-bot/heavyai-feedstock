@@ -1,5 +1,5 @@
 {% set name = "heavyai" %}
-{% set version = "0.30" %}
+{% set version = "1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/heavyai-{{ version }}.tar.gz
-  sha256: 6c85bce4ec3c9e6677c1158b22af69dc1a5cf57dded0af1f442a787b762a02b6
+  sha256: 62311655efcea6c998ca093ccec11d3f7fc99fb048d49c1a05532652d70af2b5
 
 build:
   noarch: python
@@ -24,7 +24,7 @@ requirements:
     - numpy
     - pandas
     - pyarrow >=3.0.0
-    - pyomniscidb >=5.5.0
+    - pyheavydb
     - python >=3.7
     - shapely
 
