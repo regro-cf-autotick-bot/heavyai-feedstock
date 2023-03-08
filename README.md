@@ -1,11 +1,11 @@
-About heavyai
-=============
+About heavyai-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/heavyai-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/heavyai/heavyai
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/heavyai-feedstock/blob/main/LICENSE.txt)
 
 Summary: Data science toolkit support for HeavyDB
 
