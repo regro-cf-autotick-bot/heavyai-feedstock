@@ -1,5 +1,5 @@
 {% set name = "heavyai" %}
-{% set version = "1.2" %}
+{% set version = "1.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/heavyai-{{ version }}.tar.gz
-  sha256: e1e27fe294bf1ab4df933c98884d16527777650f9b6c996618d2c90ad6b45fa1
+  sha256: 1f0e22ab4c96a42eb42ba0635d0994d15a8e7709d5982abb23ef320f2fae4033
 
 build:
   noarch: python
