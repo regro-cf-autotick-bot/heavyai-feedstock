@@ -6,18 +6,18 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/heavyai-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/heavyai-{{ version }}.tar.gz
   sha256: 1f0e22ab4c96a42eb42ba0635d0994d15a8e7709d5982abb23ef320f2fae4033
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - flit-core
   run:
     - importlib_metadata
@@ -25,10 +25,12 @@ requirements:
     - pandas
     - pyarrow >=3.0.0
     - pyheavydb
-    - python >=3.7
+    - python >={{ python_min }}
     - shapely
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - heavyai
 
